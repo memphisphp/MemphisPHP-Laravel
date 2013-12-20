@@ -9,6 +9,9 @@
         "rcrowe/twigbridge": "0.5.*",
         "cartalyst/sentry": "2.0.*"
 	},
+    "require-dev": {
+        "fzaninotto/faker": "dev-master"
+    },
 	"autoload": {
 		"classmap": [
 			"app/commands",
