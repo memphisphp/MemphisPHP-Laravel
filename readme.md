@@ -1,4 +1,8 @@
-## MemphisPHP.org - Laravel Flavored
+# MemphisPHP.org - Laravel Flavored
+
+## Contributing:
+
+Please see the CONTRIBUTING.md document
 
 ### Sentry Configuration:
 
