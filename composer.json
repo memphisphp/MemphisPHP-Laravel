@@ -5,12 +5,12 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-        "way/generators": "dev-master",
         "rcrowe/twigbridge": "0.5.*",
         "cartalyst/sentry": "2.0.*"
 	},
     "require-dev": {
-        "fzaninotto/faker": "dev-master"
+        "fzaninotto/faker": "dev-master",
+        "way/generators": "dev-master"
     },
 	"autoload": {
 		"classmap": [
