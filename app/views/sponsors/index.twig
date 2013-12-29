@@ -1,7 +1,68 @@
-{% for sponsor in sponsors %}
-    <p>
-        <a href="{{ sponsor.link  }}" target="_blank">
-            <img src="/img/{{ sponsor.imgLink }}" alt="{{ sponsor.description }}">
-        </a>
-    </p>
-{% endfor %}
+{% extends "base" %}
+{% block title %}Sponsors - MemphisPHP{% endblock %}
+
+{% block description %}MemphisPHP Sponsors{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">MemphisPHP.org</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <!--
+            <form class="navbar-form navbar-right" role="form">
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+            -->
+        </div><!--/.navbar-collapse -->
+    </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Sponsors</h1>
+            <p>Want to become a sponsor?</p>
+            <p><a class="btn btn-primary btn-lg" role="button" href="about">Sponsor MemphisPHP &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+        {% for sponsor in sponsors %}
+            <div class="row">
+                <h2><a href="{{ sponsor.link }}" target="_blank">{{  sponsor.name }}</a></h2>
+                <p>
+                    {{ sponsor.description }}
+                </p>
+                <p>
+                    <a href="{{ sponsor.link  }}" target="_blank">
+                        <img src="/img/{{ sponsor.imgLink }}" alt="{{ sponsor.description }}">
+                    </a>
+                </p>
+            </div>
+        {% endfor %}
+
+
+    <hr>
+    <footer>
+        <p>&copy; MemphisPHP.org 2013</p>
+    </footer>
+{% endblock %}
