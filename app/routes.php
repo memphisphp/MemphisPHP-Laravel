@@ -15,3 +15,5 @@ Route::get('/', function()
 {
 	return View::make('base.content');
 });
+
+Route::resource('sponsors', 'SponsorsController');
