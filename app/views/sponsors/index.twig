@@ -1,1 +1,7 @@
-index.twig
+{% for sponsor in sponsors %}
+    <p>
+        <a href="{{ sponsor.link  }}" target="_blank">
+            <img src="/img/{{ sponsor.imgLink }}" alt="{{ sponsor.description }}">
+        </a>
+    </p>
+{% endfor %}

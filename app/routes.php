@@ -13,7 +13,9 @@
 
 Route::get('/', function()
 {
-	return View::make('base.content');
+    $sponsors = Sponsor::all();
+
+	return View::make('base.content')->with('sponsors', $sponsors);
 });
 
 Route::resource('sponsors', 'SponsorsController');

@@ -21,8 +21,8 @@ class SponsorsTableSeeder extends Seeder {
             'link' => 'http://www.modernservicesinc.com/',
             'imgLink' => 'modernservicesinc.jpeg',
             'active' => '1',
-            'description' => 'Memphis Area IT Firm. Specializing in Application Development, Cabling Infrastructure,
-                                Networking, and Server Support',
+            'description' => 'Memphis Area IT Firm. Specializing in Application Development, Cabling Infrastructure,' .
+                                ' Networking, and Server Support',
         );
         DB::table('sponsors')->insert($sponsors);
 	}

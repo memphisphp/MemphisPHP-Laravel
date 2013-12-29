@@ -9,7 +9,9 @@ class SponsorsController extends BaseController {
 	 */
 	public function index()
 	{
-        return View::make('sponsors.index');
+        $sponsors = Sponsor::all();
+
+        return View::make('sponsors.index')->with('sponsors', $sponsors);
 	}
 
 	/**

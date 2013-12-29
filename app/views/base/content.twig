@@ -50,19 +50,27 @@
                 <h2>Find us on Github</h2>
                 <p>You can find out what we're working on by viewing our Github Organization.</p>
                 <p>We also offer an easy to use Vagrant box for your PHP projects</p>
-                <p><a class="btn btn-default" href="https://github.com/memphisphp" role="button">View details &raquo;</a></p>
+                <p><a class="btn btn-default" href="https://github.com/memphisphp" role="button">Github &raquo;</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Social Media & Events</h2>
                 <p>Were to find out all the most recent news and updates regarding MemphisPHP and related events happening in Memphis.</p>
                 <p>RSVP to our monthly meet up and discover other great #memtech events.</p>
-                <p><a class="btn btn-default" href="/social" role="button">View details &raquo;</a></p>
+                <p><a class="btn btn-default" href="/social" role="button">Social &raquo;</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Sponsors</h2>
-                <p>We are proud to be sponsored by Vaco & Modern Services Inc.</p>
+                <p>Current Sponsors:</p>
+                {% for sponsor in sponsors %}
+                    <p>
+                        <a href="{{ sponsor.link  }}" target="_blank">
+                            <img src="/img/{{ sponsor.imgLink }}" alt="{{ sponsor.description }}">
+                        </a>
+                    </p>
+                {% endfor %}
+
                 <p>Learn about our current sponsors and how you can help sponsor MemphisPHP!</p>
-                <p><a class="btn btn-default" href="/sponsor" role="button">View details &raquo;</a></p>
+                <p><a class="btn btn-default" href="/sponsor" role="button">Sponsors &raquo;</a></p>
             </div>
         </div>
 
