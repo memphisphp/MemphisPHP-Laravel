@@ -15,8 +15,6 @@ Please see the CONTRIBUTING.md document
 * composer install
 * bower install
 
-
-
 ## Requirements
 
 * [Composer](http://www.getcomposer.org)
